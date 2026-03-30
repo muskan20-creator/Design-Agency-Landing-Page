@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Agency Landing Page</title>
+    <style>
+        /* CSS Starts Here */
+        :root {
+            --primary-green: #20c997;
+            --bg-light-green: #e9f7f2;
+            --dark-text: #1a1a1a;
+            --gray-text: #555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        /* Navbar Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: var(--bg-light-green);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark-text);
+        }
+
+        .logo span {
+            color: #fd7e14; /* Orange color for 'AGENCY' */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+        }
+
+        .nav-buttons .login-btn {
+            text-decoration: none;
+            color: var(--dark-text);
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        .register-btn {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+            background-color: var(--bg-light-green);
+            min-height: 80vh;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--dark-text);
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: var(--gray-text);
+            margin-bottom: 30px;
+            max-width: 450px;
+        }
+
+        .get-started-btn {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            z-index: 2;
+        }
+
+        /* Partner Logos Section */
+        .partners {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 8%;
+            background-color: #fff;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .partners img {
+            height: 30px;
+            opacity: 0.7;
+            filter: grayscale(100%);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content p {
+                margin: 0 auto 30px;
+            }
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Design<span>AGENCY</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Services ▾</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="register-btn">Register</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Increase Your Customers Loyalty and Satisfaction</h1>
+            <p>We help businesses like yours earn more customers, standout from competitors, make more money</p>
+            <a href="#" class="get-started-btn">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="./image/Group 38.png" alt="Agency Professional">
+        </div>
+    </section>
+
+    <section class="partners">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Trello_logo.svg" alt="Trello">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Monday_logo.svg" alt="Monday">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Notion-logo.svg" alt="Notion">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" alt="Slack">
+    </section>
+
+</body>
+</html>
