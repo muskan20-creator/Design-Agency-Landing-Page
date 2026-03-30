@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 1000px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #619a6b;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .main-title {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Flexbox for Tabs and Content */
+        .content-wrapper {
+            display: flex;
+            gap: 50px;
+            text-align: left;
+        }
+
+        .tabs {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tab-link {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .tab-link.active {
+            background-color: #619a6b;
+            color: white;
+            border-color: #619a6b;
+        }
+
+        .tab-link:hover:not(.active) {
+            background-color: #f9f9f9;
+        }
+
+        /* Image and Text side */
+        .display-area {
+            flex: 2;
+        }
+
+        .service-img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .text-content h3 {
+            margin: 20px 0 10px;
+            font-size: 22px;
+        }
+
+        .text-content p {
+            color: #777;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Responsive (Mobile ke liye) */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="subtitle">OUR SERVICES</p>
+        <h1 class="main-title">We Can Help You With This Situation</h1>
+
+        <div class="content-wrapper">
+            <div class="tabs">
+                <button class="tab-link active">Relation Problem</button>
+                <button class="tab-link">Couples Counseling</button>
+                <button class="tab-link">Depression Treatment</button>
+                <button class="tab-link">Family Problem</button>
+                <button class="tab-link">Personal Problem</button>
+                <button class="tab-link">Business Problem</button>
+            </div>
+
+            <div class="display-area">
+                <img src="./image/Featured-image-1.png-1.webp" alt="Relation Problem" class="service-img">
+                <div class="text-content">
+                    <h3>Relation Problem</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarks grove right at the coast of the
+                        Semantics, a large language ocean.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
