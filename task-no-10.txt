@@ -1,0 +1,35 @@
+java script
+var: var ik keyword hy,Yeh purana tareeqa hai. Is mein variables ko
+ dobara declare kiya ja sakta hai, jo kabhi kabhi bugs paida karta hai.
+
+let:Yeh modern tareeqa hai. Is ki value ko update kiya ja sakta hai 
+lekin dobara declare nahi kiya ja sakta.
+
+const:Yeh un values ke liye hota hai jo kabhi tabdeel nahi honi (e.g., PI value ya Birthday). 
+Isko na update kiya ja sakta hai na re-declare.
+
+When to use let: Jab aapko pata ho ke value baad mein badal sakti hai
+Why const is important: Taake galti se koi important value change na ho jaye.
+
+Data Types (Basic):
+String: Text, jo hamesha quotes mein hota hai: "Hello World"
+
+Number: Digits, bina quotes ke: 25 ya 3.14
+
+Boolean: Sirf do values: true ya false
+
+Undefined: Jab variable bana diya ho par value na di ho.
+
+Null: Jab aap khod variable ko "khali" rakhte hain.
+
+typeof operator use kar ke aap check kar sakte hain ke kisi cheez ki type kya hai.
+
+
+ User Input:
+prompt(): Is function ke zariye hum user se browser mein input lete hain.
+
+Input Lena: let userAge = prompt("Enter your age:");
+
+Conversion: Prompt se milne wala data hamesha String hota hai. Math calculations ke liye hum use Number() function se convert karte hain.
+
+Example: let convertedAge = Number(userAge);

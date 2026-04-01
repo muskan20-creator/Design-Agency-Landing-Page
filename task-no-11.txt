@@ -1,0 +1,151 @@
+Operators:
+
+1. Arithmetic Operators
+These are just basic math.
+
++ (Add)
+
+- (Subtract)
+
+* (Multiply)
+
+/ (Divide)
+
+% (Remainder/Modulus)
+Example:
+1: Imagine you are buying 3 apples for 20 rupees each.
+let price = 20
+let quantity = 3
+let total = price * quantity 
+console.log(total) // 60
+2: If you have 10 cookies and share them with 3 friends, how many are left over?
+let cookies = 10
+let friends = 3
+let leftover = 10%3 
+console.log(leftover) // 1
+
+2. Assignment Operators
+These save values into variables.
+
+= : Simple assignment.
+
++= : Add and save.
+
+-= : Subtract and save.
+Example:
+You have 100 rupees. You find 50 more.
+let wallet = 100
+wallet+=50
+console.log(wallet) //150
+
+3. Comparison Operators
+These compare two things and give a true or false answer.
+
+> (Greater than)
+
+< (Less than)
+
+>= (Greater or equal)
+
+<= (Less or equal)
+
+== (Checks value only): "5" == 5 is true.
+
+=== (Checks value AND type)"5" === 5 is false because one is text and one is a number.
+Example:
+let passingMarks = 33;
+let myMarks = 40;
+console.log(myMarks >= passingMarks); // true
+Example 2:
+let x = "6"
+let y = 6
+console.log(x==y)//true
+console.log(x===y)//false
+
+4. Logical Operators
+Used to combine multiple conditions.
+
+&& (AND): Both sides must be true.
+
+|| (OR): At least one side must be true.
+
+! (NOT): Flips the answer (true becomes false).
+
+Example:
+To get a discount, you must be a student AND over 18.
+let aStudent = true
+let age = 20
+let discount = (aStudent && age > 18)
+console.log(discount) // true
+
+5. Unary & Ternary Operators
+Shortcuts for quick tasks.
+
+++: Increases number by 1.
+
+--: Decreases number by 1.
+
+? : (Ternary): A one-line if-else.
+Example:
+let age = 20
+let status = (age > 18) ? "age is above 18":"age is less than 18"// age is above 18
+
+6. Conditional Statements (If, Else, Else If)
+
+if: Use if you have one condition.
+
+else if: Use for extra conditions.
+
+else: Use as a backup if nothing else matches.
+
+Example:
+let marks = 70
+if (marks >= 90) {
+    console.log("Grade A+");
+} else if (marks >= 70) {
+    console.log("Grade A");
+} else {
+    console.log("Pass");
+}
+
+Example 2:
+Write an if statement that checks if a number is even or odd
+let x = 3 
+if(x%2===0){
+    console.log("its a even number")
+}
+else{
+    console.log("its a odd number")
+}
+
+7. Switch Statement:
+Use this when you have many specific options for one variable. It is cleaner than many else if blocks.
+Example:
+let light = "red";
+
+switch (light) {
+    case "red":
+        console.log("Stop");
+        break;
+    case "yellow":
+        console.log("Ready");
+        break;
+    case "green":
+        console.log("Go");
+        break;
+    default:
+        console.log("Broken light");
+}
+
+Mini World Example:
+let userAge = 16
+let hasMembership =false
+if (userAge>=18 && hasMembership === true){
+    console.log("Welcome to the Gym!")
+}
+else if(userAge>=18 && hasMembership === false){
+    console.log("Please buy a pass.")
+}
+else {
+    console.log("You are too young for this gym.")
+}
